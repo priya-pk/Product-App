@@ -1,0 +1,51 @@
+<div class="card">
+    <form (ngSubmit)="AddProduct()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Product Id</label></td>
+                            <td><input type="text" name="_id" [(ngModel)]="productItem.productId"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Name</label></td>
+                            <td><input type="text" name="productname" [(ngModel)]="productItem.productName"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Code</label></td>
+                            <td><input type="text" name="productcode" [(ngModel)]="productItem.productCode"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Date</label></td>
+                            <td><input type="text" name="releasedate" [(ngModel)]="productItem.releaseDate"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Description</label></td>
+                            <td><input type="text" name="description" [(ngModel)]="productItem.description"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Price</label></td>
+                            <td><input type="text" name="price" [(ngModel)]="productItem.price"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Star Rating</label></td>
+                            <td><input type="text" name="starRating" [(ngModel)]="productItem.starRating"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product ImageUrl</label></td>
+                            <td><input type="file" name="imageUrl" [(ngModel)]="productItem.imageUrl"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="submit"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
